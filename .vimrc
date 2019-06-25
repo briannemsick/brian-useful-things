@@ -1,9 +1,6 @@
 :syntax on
-set ruler
-:map g 1G
-":map! ;; <Esc>
+:set ruler
 :set incsearch
-":set autoindent
 :set wrap linebreak nolist
 :set autochdir
 :set foldmethod=indent
@@ -11,7 +8,5 @@ set ruler
 :set clipboard=unnamed
 :set ts=2 sts=2 sw=2 expandtab
 :set cc=89
-set guioptions-=T
-set guioptions-=r
 autocmd Filetype python setlocal ts=4 sts=4 sw=4
 autocmd BufWritePre * :%s/\s\+$//e
